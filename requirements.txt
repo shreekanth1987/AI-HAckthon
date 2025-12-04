@@ -1,5 +1,6 @@
-langchain
-langchain-community
-langgraph
-langchain_openai
-streamlit
+pandas==2.3.3
+openlineage-python==1.40.1
+python-dotenv==1.2.1
+groq==0.37.0
+langchain-groq 
+pyspark==3.5.1
