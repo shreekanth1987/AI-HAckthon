@@ -121,3 +121,135 @@ pypdf.errors.PdfStreamError: Stream has ended unexpectedly
 
 
 
+
+
+2nd error:
+
+============================================================
+Initializing models...
+============================================================
+RAG EVALUATION WITH LOCAL DOCUMENTS
+============================================================
+
+============================================================
+GROUND TRUTH SETUP
+============================================================
+✓ Loaded 20 Q&A pairs from ./rag_hallucinate.json
+
+============================================================
+DEEP EVAL EVALUATION RESULTS
+============================================================
+
+============================================================
+RUNNING RAG EVALUATION WITH DEEPEVAL
+============================================================
+
+Generating answers for 20 questions...
+
+[1/20] What is food waste according to the paper?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[2/20] Which stages contribute most to food waste in developed countries?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[3/20] What is a major cause of post-harvest losses in low-income countries?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[4/20] Which greenhouse gas is produced from food waste decomposition in landfills?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[5/20] What economic impact does food waste create?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[6/20] What is the role of cold chain management?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[7/20] What is Modified Atmosphere Packaging (MAP)?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[8/20] How do food redistribution laws help reduce waste?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[9/20] Why are date labeling standards important?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[10/20] What is the purpose of public awareness campaigns?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[11/20] What role do food banks play?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[12/20] What are Good Samaritan laws?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[13/20] What is upcycling in the context of food waste?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[14/20] How does composting support circular economy?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[15/20] What is precision agriculture?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[16/20] How do shorter supply chains reduce food waste?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[17/20] What is gleaning?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[18/20] Why is food safety a challenge in food recovery?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[19/20] How do food waste reduction apps help?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+
+[20/20] What is the main conclusion of the paper?
+Error processing question: Checkpointer requires one or more of the following 'configurable' keys: thread_id, checkpoint_ns, checkpoint_id
+Deepeval Metrics configured:
+{'hallucination': <deepeval.metrics.hallucination.hallucination.HallucinationMetric object at 0x0000025FC504FA70>, 'correctness': <deepeval.metrics.g_eval.g_eval.GEval object at 0x0000025FC5118350>}
+
+============================================================
+EVALUATING WITH DEEPEVAL METRICS
+============================================================
+✨ You're running DeepEval's latest Hallucination Metric! (using Custom Azure OpenAI Model, strict=False,     
+async_mode=True)...
+✨ You're running DeepEval's latest Correctness [GEval] Metric! (using Custom Azure OpenAI Model, 
+strict=False, async_mode=True)...
+Evaluating 0 test case(s) in parallel ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━   0% 0:00:00No test cases found, please try again.
+
+Evaluation completed successfully!
+test_results=[] confident_link=None test_run_id=None
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+============================================================
+EVALUATING WITH DEEPEVAL METRICS
+============================================================
+
+Evaluating test cases individually...
+
+Evaluation completed!
+Evaluation completed!
+Evaluation completed!
+
+Evaluation completed!
+Evaluation completed!
+
+============================================================
+HALLUCINATION EVALUATION RESULTS FROM DEEP EVAL
+============================================================
+
+✅ Results saved to hallucination_results\deepeval_hallucination_results_17_12_25_18_41.csv
+✅ Detailed results with reasons saved to hallucination_results\deepeval_detailed_results_17_12_25_18_41.json 
+error uploading: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Max retries exceeded with url: /batch/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+
+
+
+
+
+
+
+
+
