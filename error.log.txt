@@ -1,0 +1,123 @@
+(.food) C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu>python ragas_Llama_EVAL_HAL_AGENT_LnGr.py
+🔨 Creating new FAISS vectorstore...
+Traceback (most recent call last):
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 359, in lazy_parse
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\ragas_Llama_EVAL_HAL_AGENT_LnGr.py", line 5, in <module>
+    from app import graph
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\app.py", line 15, in <module>
+    from RAG_test import sql_agent, waste_management_QA, waste_management_details
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 89, in <module>
+    _VECTORSTORE_CACHE = _load_or_create_vectorstore()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 73, in _load_or_create_vectorstore
+    pages = loader.load()
+            ^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 361, in lazy_parse
+    raise ImportError(
+ImportError: `pypdf` package not found, please install it with `pip install pypdf`
+
+(.food) C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu>pip install pypdf
+Collecting pypdf
+  Downloading pypdf-6.4.2-py3-none-any.whl.metadata (7.1 kB)
+Downloading pypdf-6.4.2-py3-none-any.whl (328 kB)
+Installing collected packages: pypdf
+Successfully installed pypdf-6.4.2
+
+[notice] A new release of pip is available: 24.3.1 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(.food) C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu>python ragas_Llama_EVAL_HAL_AGENT_LnGr.py
+🔨 Creating new FAISS vectorstore...
+invalid pdf header: b'1. In'
+EOF marker not found
+Traceback (most recent call last):
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\ragas_Llama_EVAL_HAL_AGENT_LnGr.py", line 5, in <module>
+    from app import graph
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\app.py", line 15, in <module>
+    from RAG_test import sql_agent, waste_management_QA, waste_management_details
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 89, in <module>
+    _VECTORSTORE_CACHE = _load_or_create_vectorstore()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 73, in _load_or_create_vectorstore
+    pages = loader.load()
+            ^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 384, in lazy_parse
+    pdf_reader = pypdf.PdfReader(pdf_file_obj, password=self.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 131, in __init__
+    self._initialize_stream(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 153, in _initialize_stream
+    self.read(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 592, in read
+    self._find_eof_marker(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 698, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_utils.py", line 316, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+(.food) C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu>python ragas_Llama_EVAL_HAL_AGENT_LnGr.py
+🔨 Creating new FAISS vectorstore...
+invalid pdf header: b'1. In'
+EOF marker not found
+Traceback (most recent call last):
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\ragas_Llama_EVAL_HAL_AGENT_LnGr.py", line 5, in <module>
+    from app import graph
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\app.py", line 15, in <module>
+    from RAG_test import sql_agent, waste_management_QA, waste_management_details
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 89, in <module>
+    _VECTORSTORE_CACHE = _load_or_create_vectorstore()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\RAG_test.py", line 73, in _load_or_create_vectorstore
+    pages = loader.load()
+            ^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_core\document_loaders\base.py", line 43, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 384, in lazy_parse
+    pdf_reader = pypdf.PdfReader(pdf_file_obj, password=self.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 131, in __init__
+ine 131, in __init__
+    self._initialize_stream(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", l    self._initialize_stream(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 153, in _initialize_stream
+ine 153, in _initialize_stream
+    self.read(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", l    self.read(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 592, in read
+    self._find_eof_marker(stream)
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_reader.py", line 698, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu\.food\Lib\site-packages\pypdf\_utils.py", line 316, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+(.food) C:\Users\GenAICHNSIRUSR58\AI_POC\Langraph_Agent_Food_Menu>
+
+
+
+
+
+
+
