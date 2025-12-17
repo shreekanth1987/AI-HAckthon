@@ -1,0 +1,63 @@
+question_num,question,expected_output,actual_output,num_contexts,hallucination_score,hallucination_success,correctness_score,correctness_success
+1,Which dish on the menu won an international food award?,There is no information indicating that any dish has won an international award.,"
+
+The provided context does not contain any information related to dishes, menus, or international food awards. The content focuses on academic conferences (e.g., KDD ’25), research papers, LLM-based evaluations (e.g., ""LLMs-as-judges""), technical leaderboards (e.g., Berkeley Function-Calling Leaderboard), and metrics for AI/agent performance (e.g., AST correctness, Plan Quality). There is no mention of culinary achievements, food-related awards, or menu items in the text. The answer cannot be derived from the given context.",3,1.0,False,1.0,True
+2,What year was this menu originally created?,The creation year of the menu is not specified.,"
+
+The provided context does not mention any information about a ""menu"" or its creation year. The references and conference details included in the context focus on academic papers, repositories (e.g., Babyagi, OpenAI Evals), and conference proceedings (KDD ’25 in 2025). There is no indication of a ""menu"" being discussed or referenced in the material. As such, the question cannot be answered based on the given context.",3,0.0,True,0.2,False
+3,Which dish is the chef’s personal favorite?,The chef’s personal preferences are not provided.,"
+
+The context provided consists of citations for academic papers related to computer science topics, such as machine learning and cybersecurity. There is no mention of a chef, culinary dishes, or personal preferences related to food in any of the cited works. Therefore, the chef’s personal favorite dish cannot be determined from the given context. The information required to answer the question is absent.",3,0.0,True,1.0,True
+4,How many Michelin stars does this restaurant have?,There is no information stating that the restaurant has any Michelin stars.,"
+
+The provided context does not contain any information related to Michelin stars or restaurant ratings. The cited sources focus on topics such as AI frameworks (BabyAGI), benchmarking metrics (Nvidia), evaluation tools (OpenAI Evals), conversational agent interaction quality (driks et al.), and web navigation dialogues (WebLINX). None of these address restaurant evaluations or Michelin star ratings. Therefore, the question cannot be answered using the given context.",3,0.0,True,1.0,True
+5,Which dish uses a secret family recipe?,No dishes are described as using a secret or family recipe.,"
+
+The provided context does not mention any specific dish that uses a secret family recipe. The content focuses on adversarial prompts targeting AI agents, vulnerabilities in LLMs (e.g., coreference-based attacks), and technical research papers or tools like *AgentQuest* and Google Vertex AI. There is no culinary, recipe-related, or food-related information in the context to answer this question.",3,0.0,True,1.0,True
+6,What is the restaurant’s best-selling dish of all time?,Best-selling dish data is not available.,"
+
+The provided information does not contain any details about a restaurant or its best-selling dish. The context primarily discusses research papers, leaderboards, and technical topics related to artificial intelligence, language models, and web navigation. There is no mention of restaurants, dishes, or culinary-related data. Therefore, the answer cannot be determined from the given material.",3,1.0,False,0.2,False
+7,Which dish customers order most during festivals?,There is no seasonal or festival-based ordering data provided.,"
+
+The provided context does not contain any information related to dishes, customer orders, or festival-related food preferences. The context focuses on studies about long-term conversational memory in AI agents (e.g., Maharana et al.), adherence to domain-specific policies, and a reference to a paper on language agents for web interaction (""Webshop"" by Yao et al., 2022). There is no mention of culinary trends, festival dishes, or customer behavior regarding food orders. Therefore, the question cannot be answered based on the given material.",3,0.0,True,1.0,True
+8,Which dish was added most recently to the menu?,Menu version history or addition dates are not provided.,"
+
+The provided context does not contain any information related to dishes, menus, or culinary items. It exclusively lists academic papers, authors, conferences, and technical topics (e.g., neural information processing, AI benchmarking). Therefore, **no answer can be derived from the given context** for the question about the most recently added dish to a menu.",3,1.0,False,0.7,True
+9,Which dish has received the highest customer rating online?,Online ratings or reviews are not available.,"
+
+The provided context does not contain any information related to dishes, customer ratings, or online reviews. The context focuses on evaluation metrics (e.g., NDCG, F1 score), interaction quality aspects (e.g., task completion, output quality), and technical parameters in machine comprehension and system evaluation. Therefore, the question cannot be answered based on the given material.",3,0.0,True,0.2,False
+10,Which dish is recommended by food critics?,There is no critic endorsement information provided.,"
+
+The provided context does not contain any information related to food critics, culinary recommendations, or specific dishes. The context focuses on methods for evaluating agent outputs (e.g., user studies, expert audits, crowdworker annotations) and cites research papers in machine learning and AI evaluation. There is no mention of food, dishes, or critics in the excerpts provided. Therefore, the question cannot be answered based on the given material.",3,0.0,True,1.0,True
+11,Which dish was inspired by a royal recipe?,No historical or royal inspiration is mentioned for any dish.,"
+
+The provided information does not mention any dish inspired by a royal recipe. The context focuses on neural information processing systems, evaluation methods for tasks like dialogue retention, and citations to research papers (e.g., Maharana et al. [65]) related to long conversational interactions. There is no reference to culinary dishes, recipes, or historical/royal culinary practices in the given text.",3,1.0,False,1.0,True
+12,Which dish is famous on social media?,Social media popularity data is not available.,"
+
+The provided context does not mention any specific dish or culinary topic. The cited works focus on evaluating conversational agents (""SocialBench""), benchmarking multimodal internet agents (""Spa-bench""), and other AI-related research. There is no information about dishes, social media trends, or food-related content in the given excerpts. Therefore, the question cannot be answered based on the context provided.",3,0.0,True,0.2,False
+13,Which dish generates the highest profit for the restaurant?,Profitability data per dish is not provided.,"
+
+The provided context does not contain any information related to restaurant dishes, their costs, pricing, sales data, or profit calculations. The context focuses on evaluating the performance and cost efficiency of AI agents (likely LLM-based systems) in terms of metrics like task completion, latency, and token-based operational costs. It does not discuss food service, culinary products, or financial metrics specific to restaurant operations. Therefore, the question cannot be answered using the given material.",3,1.0,False,1.0,True
+14,Which dish is considered the house specialty worldwide?,There is no information defining a worldwide house specialty.,"
+
+The provided context does not contain any information related to culinary dishes or house specialties. The context discusses Role-Based Access Control (RBAC), the ""World of Bits"" platform for web-based agents, and the HELM benchmark for enterprise scenarios in fields like finance and law. There is no mention of food, restaurants, or specific dishes in the given material. Therefore, the question cannot be answered based on the provided context.",3,1.0,False,1.0,True
+15,Which dish has been on the menu since the restaurant opened?,Historical menu longevity details are not available.,"
+
+The provided context does not contain any information related to a specific restaurant, its menu, or dishes that have been available since its opening. The context focuses on topics such as long-term conversational memory in AI agents (e.g., Maharana et al.'s work), technical references to AI tools (e.g., BabyAGI, NVIDIA's LLM metrics, OpenAI Evals), and author names. There is no mention of culinary details, menus, or restaurant history. Therefore, the question cannot be answered based on the given material.",3,0.0,True,0.2,False
+16,Which dish was inspired by the chef’s travels abroad?,Chef travel inspirations are not documented.,"
+
+The provided context does not contain any information related to a dish inspired by a chef’s travels abroad. The context exclusively discusses academic papers in the fields of artificial intelligence, machine learning, and web navigation (e.g., ""Self-Evolving LLM-Based Agents for AI Diplomacy"" and ""WebLINX: Real-World Website Navigation with Multi-Turn Dialogue""). There is no mention of culinary topics, chefs, or dishes. Therefore, the question cannot be answered based on the given context.",3,1.0,False,0.2,False
+17,Which dish is recommended for first-time visitors?,No recommendations for first-time visitors are specified.,"
+
+The provided context does not contain any information related to dishes, culinary recommendations, or domain-specific policies for food. The cited works ([63], [64], and Maharana et al. [65]) focus on topics such as **website navigation with multi-turn dialogue (WebLINX)**, **long-term conversational memory in AI agents**, and adherence to domain-specific policies (though the latter is cut off in the excerpt). There is no mention of food, dining, or recommendations for first-time visitors in any of the referenced material. 
+
+To answer the question accurately, additional context about restaurants, cuisines, or specific policies related to food recommendations would be required.",3,0.0,True,1.0,True
+18,Which dish customers regret not ordering?,Customer regret or sentiment data is not available.,"
+
+The question ""Which dish customers regret not ordering?"" cannot be answered based on the provided context. The context focuses on **adversarial attacks on AI systems** (e.g., coreference-based attacks to bypass safety rules) and references academic papers related to machine comprehension (SQuAD dataset) and AI safety research. There is no mention of dishes, food, customer preferences, or restaurant-related topics in the given material. The cited authors (e.g., Pranav Rajpurkar, Percy Liang) and their works are unrelated to culinary studies. For an accurate answer, additional context about food, restaurants, or customer reviews would be required.",3,1.0,False,1.0,True
+19,Which dish is most ordered late at night?,Time-based ordering patterns are not provided.,"
+
+The provided context does not contain any information related to dishes, food ordering habits, or time-specific consumption patterns. The context primarily lists academic papers, authors, and technical terms associated with neural information processing systems, performance metrics (e.g., latency, token usage), and evaluation frameworks (e.g., SWE-bench, MobileAgent). There is no mention of food, dining, or late-night ordering trends. Therefore, the question cannot be answered based on the given context.",3,0.0,True,1.0,True
+20,Which dish defines the brand identity of the restaurant?,Brand-defining dishes are not explicitly identified.,"
+
+The provided context does not contain any information related to restaurants, dishes, or brand identity. The context discusses enterprise-focused topics such as the HELM benchmark (with domain-specific metrics for finance/law), Role-Based Access Control (RBAC), and academic references. There is no mention of culinary establishments, signature dishes, or brand-defining elements of a restaurant. The question falls outside the scope of the given material.",3,0.0,True,1.0,True
