@@ -5,7 +5,6 @@ from typing import Annotated
 from langgraph.graph.message import AnyMessage, add_messages
 from langgraph.prebuilt import ToolNode
 from langgraph.prebuilt import tools_condition
-from host.tools import add, sub, multiply, divide
 from langgraph.graph import StateGraph, START, END
 from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.memory import MemorySaver
@@ -15,14 +14,15 @@ from langchain_core.messages.utils import count_tokens_approximately
 import streamlit as st
 from RAG_test import sql_agent, waste_management_QA, waste_management_details
 
+
 client = httpx.Client(verify=False)
 
 llm = ChatOpenAI(
-    base_url="https://genailab.tcs.in",
-    model="azure/genailab-maas-gpt-35-turbo",
-    api_key="sk-Ycj1VI3lPw9Wn_qAFtcFvA",  # Replace with your actual API key
+    base_url="https://easyjet-ejdp-data-dev.cloud.databricks.com/serving-endpoint",
+    model="databricks-gpt-oss-20b",
+    api_key="",  
     http_client=client
-)
+) 
 
 
 class State(TypedDict):
@@ -83,12 +83,13 @@ llm_with_tools = prompt | llm.bind_tools(tools)
 def chatbot(state: State):
     messages = trim_messages(
         state['messages'],
-        strategy = "last",
-        token_counter = count_tokens_approximately,
-        max_tokens = 100000
+        strategy="last",
+        token_counter=count_tokens_approximately,
+        max_tokens=100000
     )
-    state['messages'] = llm_with_tools.invoke({"messages":messages})
-    return state
+    response = llm_with_tools.invoke({"messages": messages})
+    return {"messages": [response]}
+  
 
 builder = StateGraph(State)
 builder.add_node("chat_node", chatbot)
